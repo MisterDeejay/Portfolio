@@ -32,9 +32,9 @@
   View.prototype.setupBoard = function() {
     var boardHtml = "";
     for(var i = 0; i < this.board.height; i++) {
-      boardHtml += "<ul>";
+      boardHtml += "<ul class='snake-frame'>";
       for(var j = 0; j < this.board.width; j++) {
-        boardHtml += "<li></li>";
+        boardHtml += "<li class='snake-frame'></li>";
       }
       boardHtml += "</ul>";
     }
