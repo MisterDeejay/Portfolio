@@ -69,7 +69,7 @@
   };
 
   View.prototype.updateClasses = function(coords, className) {
-    this.$li.filter("." + className).removeClass();
+    this.$li.filter("." + className).removeClass(className);
 
     coords.forEach(function(coord) {
       var flatCoord = (coord.x * this.board.height) + coord.y;
