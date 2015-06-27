@@ -13,10 +13,9 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
+
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets", "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "font-awesome-sprockets", "font-awesome";
 
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
@@ -114,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url('<%= asset_path("back_sml.jpg") %>') no-repeat center top;
+	background: image-url('back_sml.jpg') no-repeat center top;
 	margin-top: -70px;
 	text-align:center;
 	background-attachment: relative;
@@ -189,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #workwrap {
-	background: url('<%= asset_path("work.jpg") %>') no-repeat center top;
+	background: image-url("work.jpg") no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -224,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #aboutwrap {
-	background: url('<%= asset_path("portrait_bw_crop.jpg") %>') no-repeat center top;
+	background: image-url("portrait_bw_crop.jpg") no-repeat center top;
   margin-top: -70px;
 	margin-bottom: -60px;
 	padding-top: 250px;
